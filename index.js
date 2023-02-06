@@ -6,12 +6,14 @@ const { validationMiddleware } = require('./Middlewares/validation.middleware');
 //dotenv
 require('dotenv').config();
 
-const cors = require('cors');
-app.use(cors());
+
 
 //importing express
 const express = require("express");
 const app = express();
+
+const cors = require('cors');
+app.use(cors());
 
 app.use(express.json())
 
