@@ -25,7 +25,7 @@ class ValidationService {
             }
         }
 
-        if (size != "256x256" && size != "512x512" && size != "1024*1024") {
+        if (size != "256x256" && size != "512x512" && size != "1024x1024") {
             let message = "The size of the generated images. Must be one of 256x256, 512x512, or 1024x1024";
             return {
                 status: false,
